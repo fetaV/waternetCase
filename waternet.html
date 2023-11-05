@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+  </head>
+  <style>
+    .breadcrumb-arrow .breadcrumb-item + .breadcrumb-item::before {
+      content: "";
+    }
+
+    .breadcrumb-arrow {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item,
+    .breadcrumb-arrow .breadcrumb-item a,
+    .breadcrumb-arrow .breadcrumb-item span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item + .breadcrumb-item:before {
+      padding: 0;
+      content: "";
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a,
+    .breadcrumb-arrow .breadcrumb-item.active {
+      height: 40px;
+      padding: 0 10px 0 10px;
+      margin-right: 10px;
+      line-height: 40px;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      background-color: #3bafda;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a:after,
+    .breadcrumb-arrow .breadcrumb-item a:before {
+      position: absolute;
+      top: -1px;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a:before {
+      right: -10px;
+      z-index: 3;
+      border-left-color: #3bafda;
+      border-left-style: solid;
+      border-left-width: 11px;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a:after {
+      right: -11px;
+      z-index: 2;
+      border-left: 11px solid #2494be;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a:focus,
+    .breadcrumb-arrow li a:hover {
+      background-color: #4fc1e9;
+      border: 1px solid #4fc1e9;
+    }
+
+    .breadcrumb-arrow .breadcrumb-item a:focus:before,
+    .breadcrumb-arrow li a:hover:before {
+      border-left-color: #4fc1e9;
+    }
+
+    .breadcrumb-arrow li.active:after,
+    .breadcrumb-arrow li.active:before {
+      border-left-color: #2494be;
+    }
+
+    /* Table */
+
+    table {
+      border: 1px solid #ccc;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    table tr {
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+
+    table th,
+    table td {
+      padding: 10px;
+      text-align: start;
+    }
+
+    table th {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+      background-color: lavender;
+      height: 4rem;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /*Mobil telefon için css kodları*/
+
+    @media screen and (max-width: 1080px) {
+      table {
+        border: 0;
+      }
+
+      table thead {
+        display: none;
+      }
+
+      table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+      }
+
+      table td {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+
+      /*data-label valulerini alarak sütünümuza eklemiş oluyoruz*/
+
+      table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  </style>
+  <body>
+    <!-- Modal Start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Installation Agenda
+                </label>
+              </div>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Installation
+              </label>
+            </div>
+            <div class="border rounded-3 p-3">
+              <div class="btn btn-info text-white">Reset Fields</div>
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-md-2">
+                  <label class="col-form-label">Contract No</label>
+                </div>
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="10001580"
+                  />
+                </div>
+              </div>
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-md-2">
+                  <label class="col-form-label">Service Category</label>
+                </div>
+                <div class="col-md-4">
+                  <select
+                    class="form-select"
+                    disabled
+                    aria-label="Default select example"
+                  >
+                    <option selected>Assembly</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row g-3 align-items-center mt-2">
+                <div class="col-md-2">
+                  <label class="col-form-label">Contract Name</label>
+                </div>
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Net Price"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="border rounded-3 p-3">
+              <div class="d-flex justify-content-between">
+                <div class="btn btn-outline-info mb-3">Last Week</div>
+                <div class="btn btn-outline-info mb-3">Next Week</div>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  09.08.2023 <br />
+                  Wednesday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  10.08.2023 <br />
+                  Thursday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  11.08.2023 <br />
+                  Friday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  12.08.2023 <br />
+                  Saturday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  13.08.2023 <br />
+                  Sunday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  14.08.2023 <br />
+                  Monday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+                <div class="col-md">
+                  15.08.2023 <br />
+                  Tuesday
+                  <div class="btn btn-outline-primary mt-1">09:00-10:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">10:30-12:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">12:00-13:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">13:30-15:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">15:00-16:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">16:30-18:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">18:00-19:30(1)</div>
+                  <div class="btn btn-outline-primary mt-1">19:30-21:00(1)</div>
+                  <div class="btn btn-outline-primary mt-1">21:00-22:30(1)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-info text-white">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- Navbar Line Start -->
+    <section>
+      <div class="container bg-info w-100 h-100 mt-5">
+        <div class="row"><br /><br /><br /><br /></div>
+      </div>
+    </section>
+    <!-- Navbar Line End -->
+
+    <!-- Breadcrumb Start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <div class="card-body">
+              <!-- Arrow breadcrumb-->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-arrow">
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-uppercase">Applications</a>
+                  </li>
+                  <li
+                    aria-current="page"
+                    class="breadcrumb-item active text-uppercase"
+                  >
+                    Purunity Applications
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Breadcrumb End -->
+
+    <!-- SelectBox & Button Start -->
+    <section>
+      <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Sales Process</option>
+              <option value="1">Call Center Process</option>
+              <option value="2">Customer Care Process</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-info text-white w-100">
+              Contract or Subscripton Number
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SelectBox & Button End -->
+
+    <!-- 2. Selectbox Start -->
+    <div class="container mt-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Sales Process</option>
+            <option value="1">Call Center Process</option>
+            <option value="2">Customer Care Process</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- 2. Selectbox End -->
+
+    <!-- Table Start -->
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <table className="mt-3 border border-5">
+            <thead>
+              <tr>
+                <th className="text-start">Order</th>
+                <th className="text-start">NO</th>
+                <th className="text-start">Subject</th>
+                <th className="text-start">Process</th>
+                <th className="text-start">Saved By</th>
+                <th className="text-start">Date</th>
+                <th className="text-start">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="text-start" data-label="Order">ExtraZet</td>
+                <td className="text-start" data-label="NO">12873234</td>
+                <td className="text-start" data-label="Subject">
+                  Adı Soyadı <br />
+                  UserID <br />
+                  Nickname
+                </td>
+                <td className="text-start" data-label="Process">
+                  <del>500 TRY</del> <br />
+                  450 TRY
+                </td>
+                <td className="text-start" data-label="Saved By">
+                  Grup adı <br />
+                  Banka adı <br />
+                  Hesap adı <br />
+                  IBAN
+                </td>
+                <td className="text-start" data-label="Date">
+                  İşlem Dateu <br />
+                  İşlem User <br />
+                  İşlem Zamanı
+                </td>
+                <td className="text-start" data-label="Actions">
+                  <i class="btn fa-solid fa-trash"></i>
+                  <i class="btn fa-solid fa-pen-to-square"></i>
+                  <i
+                    class="btn fa-solid fa-calendar-plus"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  ></i>
+                  <i class="btn fa-solid fa-calendar-check"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Table End -->
+
+    <!-- Form Start -->
+    <section>
+      <div class="container p-5 mt-5">
+        <div class="row col-md-8 d-flex justify-content-center">
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Category</option>
+              <option value="1">Call Center Process</option>
+              <option value="2">Customer Care Process</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Sub Category</option>
+              <option value="1">Call Center Process</option>
+              <option value="2">Customer Care Process</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-2 d-flex justify-content-center">
+          <div class="col-md-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Subject: SER - 99 / Cari Adı"
+              aria-label="Username"
+              disabled
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+        <div class="row mt-2 col-md-6 d-flex justify-content-center">
+          <div class="col-md-4">
+            <select
+              class="form-select"
+              disabled
+              aria-label="Default select example"
+            >
+              <option selected>Process</option>
+              <option value="1">Call Center Process</option>
+              <option value="2">Customer Care Process</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-2 d-flex justify-content-center">
+          <div class="col-md-8">
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+          </div>
+          <div class="col-md-8 text-end mt-2">
+            <div class="btn btn-info disabled">Delete</div>
+            <div class="btn btn-info disabled">Update</div>
+            <div class="btn btn-info">Create</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
