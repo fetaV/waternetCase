@@ -204,534 +204,1101 @@ const Table = () => {
                     <div className="col-md">
                       09.08.2023 <br />
                       Wednesday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option1"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option1"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option2"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option2"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option3"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option3"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option4"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option4"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option5"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option5"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option6"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option6"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option7"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option7"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option8"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option8"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option9"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option9"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       10.08.2023 <br />
                       Thursday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option10"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option10"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option11"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option11"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option12"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option12"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option13"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option13"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option14"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option14"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option15"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option15"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option16"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option16"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option17"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option17"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option18"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("10.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option18"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       11.08.2023 <br />
                       Friday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option19"
+                        autoComplete="off"
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "9:30-10:30(1)")
                         }
+                        defaultChecked=""
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option19"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option20"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option20"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option21"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option21"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option22"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option22"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option23"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option23"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option24"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option24"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option25"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option25"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option26"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option26"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option27"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("11.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option27"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       12.08.2023 <br />
                       Saturday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option28"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option28"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option29"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option29"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option30"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option30"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option31"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option31"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option32"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option32"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option33"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option33"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option34"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option34"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option35"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option35"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option36"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("12.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option36"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       13.08.2023 <br />
                       Sunday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option37"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option37"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option38"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option38"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option39"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option39"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option40"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option40"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option41"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option41"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option42"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option42"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option43"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option43"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option44"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option44"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option45"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("13.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option45"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       14.08.2023 <br />
                       Monday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option46"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option46"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option47"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option47"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option48"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option48"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option49"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option49"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option50"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option50"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option51"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option51"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option52"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option52"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option53"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option53"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option54"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("14.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option54"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                     <div className="col-md">
                       09.08.2023 <br />
                       Wednesday
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option55"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "9:30-10:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option55"
                       >
                         9:30-10:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option56"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "10:30-12:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option56"
                       >
                         10:30-12:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option57"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "12:00-13:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option57"
                       >
                         12:00-13:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option58"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "13:30-15:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option58"
                       >
                         13:30-15:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option59"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "15:00-16:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option59"
                       >
                         15:00-16:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option60"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "16:30-18:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option60"
                       >
                         16:30-18:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option61"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "18:00-19:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option61"
                       >
                         18:00-19:30(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option62"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "19:30-21:00(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option62"
                       >
                         19:30-21:00(1)
-                      </div>
-                      <div
-                        className="btn btn-outline-primary mt-1"
+                      </label>
+                      <input
+                        type="radio"
+                        className="btn-check"
+                        name="options"
+                        id="option63"
+                        autoComplete="off"
+                        defaultChecked=""
                         onClick={() =>
                           handleTimeSlotClick("09.08.2023", "21:00-22:30(1)")
                         }
+                      />
+                      <label
+                        className="btn btn-secondary mt-1"
+                        htmlFor="option63"
                       >
                         21:00-22:30(1)
-                      </div>
+                      </label>
                     </div>
                   </div>
                 </div>
